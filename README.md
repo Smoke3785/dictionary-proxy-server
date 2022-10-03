@@ -53,5 +53,5 @@ I have found that three proxies @ 100 requests/second **total** is enough to pre
 
 I don't reccommend using this for long periods of time as that's fairly rude, but for an application like mine (where the data needs retrieved in bulk once) this can speed up the rate that you can ingest data dramatically.
 
-Made by Owen Rossi-Keen
+Made by Owen Rossi-Keen 
 [GitHub](https://github.com/Smoke3785/) **|** [Website](https://owenrossikeen.com/) **|** [Donate](https://owenrossikeen.com/donate)
