@@ -37,7 +37,9 @@ Usage is incredibly straightforward. The api endpoint simulates the [Free Dictio
 ```js
 const axios = require('axios);
 
-axios.get(`https://<YOUR APP'S NAME>.fly.dev/api/v2/entries/en/<YOUR WORD>`).then((response)=> {
+const APP_NAME = `<YOUR APP'S NAME>`
+const WORD = `<YOUR WORD>`
+axios.get(`https://${APP_NAME}.fly.dev/api/v2/entries/en/${WORD}`).then((response)=> {
   console.log(response)
 }).catch(e=> {
   console.log(e)
