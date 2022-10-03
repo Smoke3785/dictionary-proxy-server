@@ -2,6 +2,8 @@
 
 This is a proxy server for the [Free Dictionary API](https://dictionaryapi.dev/) which allows one app to distribute requests - preventing the API from limited your requests. It comes pre-configured to deploy to [Fly.io](https://fly.io/) and _shouldn't_ rack up any charges, even on the hobbyist-tier.
 
+[GitHub](https://github.com/Smoke3785/dictionary-proxy-server) **|** [View on Website](https://owenrossikeen.com/docs/dictionary-proxy-server) **|** [Donate](https://owenrossikeen.com/donate)
+
 ## Deployment
 
 To deploy the proxy server, install the **flyctl** command line tool:
@@ -52,6 +54,8 @@ axios.get(`https://${APP_NAME}.fly.dev/api/v2/entries/en/${WORD}`).then((respons
 I have found that three proxies @ 100 requests/second **total** is enough to prevent overload for quite a while, but with five proxies + local requests running @ 100 requests/second **total** I have never been rate limited.
 
 I don't reccommend using this for long periods of time as that's fairly rude, but for an application like mine (where the data needs retrieved in bulk once) this can speed up the rate that you can ingest data dramatically.
+
+---
 
 Made by Owen Rossi-Keen 
 
