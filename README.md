@@ -35,10 +35,13 @@ Should be pretty straightforward.
 Usage is incredibly straightforward. The api endpoint simulates the [Free Dictionary API](https://dictionaryapi.dev/) endpoint, so all you have to do in your code is run something like:
 
 ```js
+// Node.js
+
 const axios = require('axios);
 
 const APP_NAME = `<YOUR APP'S NAME>`
 const WORD = `<YOUR WORD>`
+
 axios.get(`https://${APP_NAME}.fly.dev/api/v2/entries/en/${WORD}`).then((response)=> {
   console.log(response)
 }).catch(e=> {
