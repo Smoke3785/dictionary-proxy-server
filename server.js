@@ -5,6 +5,7 @@ const axios = require('axios');
 
 app.get(['/', '/api/v2/entries/en/:word'], (req, res) => {
   word = req.params['word'];
+
   if (word) {
     axios
       .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
@@ -18,4 +19,6 @@ app.get(['/', '/api/v2/entries/en/:word'], (req, res) => {
   }
 });
 
-app.listen(port, () => console.log(`HelloNode app listening on port ${port}!`));
+app.listen(port, () =>
+  console.log(`Dictionary API proxy listening on port ${port}!`)
+);
