@@ -1,6 +1,6 @@
 # Dictionary Proxy Server
 
-This is a proxy server for the [Free Dictionary API](https://dictionaryapi.dev/) which allows one app to distribute requests - preventing the API from limited your requests. It comes pre-configured to deploy to [Fly.io](https://fly.io/) and _shouldn't_ rack up any charges, even on the hobbyist-tier.
+This is a proxy server for the [Free Dictionary API](https://dictionaryapi.dev/) which allows one app to distribute requests - preventing the API from limiting your requests. It comes pre-configured to deploy to [Fly.io](https://fly.io/) and _shouldn't_ rack up any charges, even on the hobbyist-tier.
 
 [GitHub](https://github.com/Smoke3785/dictionary-proxy-server) **|** [View on Website](https://owenrossikeen.com/docs/dictionary-proxy-server) **|** [Donate](https://owenrossikeen.com/donate)
 
